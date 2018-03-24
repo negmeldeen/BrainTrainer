@@ -8,8 +8,10 @@
 
 
     <RelativeLayout
+        android:id="@+id/RelativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +26,8 @@
             android:layout_below="@+id/correct"
             android:layout_marginTop="35dp"
             android:onClick="playAgain"
-            android:text="Play again!" />
+            android:text="Play again!"
+            android:visibility="invisible" />
 
         <GridLayout
             android:id="@+id/gridLayout"
@@ -164,7 +167,7 @@
         android:padding="20dp"
         android:text="GO!"
         android:textSize="40sp"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
